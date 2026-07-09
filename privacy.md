@@ -1,3 +1,7 @@
+---
+permalink: /privacy/
+---
+
 # Privacy Policy
 
 **Last updated:** July 9, 2026
