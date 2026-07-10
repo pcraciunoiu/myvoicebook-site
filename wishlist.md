@@ -19,17 +19,21 @@ Ideas under consideration for MyVoiceBook. Numbers are for reference only—not 
 5. Per-app IME defaults (e.g. always confirm in password fields).
 6. Better punctuation for Whisper offline models without a separate add-on.
 7. Adjustable free-tier limits for sponsors / trial modes.
+8. **Field-aware dictation expansion** — build on numeric-field dictation (`NumericDictation` / `FieldContext`):
+   - Spoken numbers beyond English (locale-aware word → digit)
+   - Email / URL / password-aware modes (constrain characters, avoid mid-sentence casing and paragraph rules)
+   - Richer phone formatting when the host field is `TYPE_CLASS_PHONE`
 
 ## Notes
 
-8. **Improved notes UI**, including:
+9. **Improved notes UI**, including:
    - Sort notes by date updated, date created, or title
    - Pinned / favorite notes at the top of the list
    - Clearer note previews and timestamps in the list
    - Quick actions (rename, duplicate, move to archive)
    - Tablet and foldable layouts with a list + editor side-by-side
-9. **Search notes** — full-text search across note titles and bodies, with recent searches and highlighted matches.
-10. **Backup notes**
+10. **Search notes** — full-text search across note titles and bodies, with recent searches and highlighted matches.
+11. **Backup notes**
     - **Export** — manual backup to a single file (JSON or Markdown bundle) you can save or share.
     - **Automated backup** — scheduled local backups on device and optional cloud backup (e.g. Google Drive or user-chosen storage), with restore from a previous backup. Speech stays on-device; only note text is backed up.
 
