@@ -16,32 +16,33 @@ Ideas under consideration for MyVoiceBook. Numbers are for reference only—not 
 ## Dictation
 
 4. **Smart punctuation integrated into Zipformer** — fold punctuation and capitalization into the Zipformer pipeline so output reads naturally without a separate punctuation add-on download.
-5. Per-app IME defaults (e.g. always confirm in password fields).
-6. Better punctuation for Whisper offline models without a separate add-on.
-7. Adjustable free-tier limits for sponsors / trial modes.
+5. **Voice undo keywords** — say a phrase such as “scratch that” during hands-free dictation to undo the last committed segment (without tapping Undo).
+6. Per-app IME defaults (e.g. always confirm in password fields).
+7. Better punctuation for Whisper offline models without a separate add-on.
+8. Adjustable free-tier limits for sponsors / trial modes.
 
 ## Notes
 
-8. **Improved notes UI**, including:
+9. **Improved notes UI**, including:
    - Sort notes by date updated, date created, or title
    - Pinned / favorite notes at the top of the list
    - Clearer note previews and timestamps in the list
    - Quick actions (rename, duplicate, move to archive)
    - Tablet and foldable layouts with a list + editor side-by-side
-9. **Search notes** — full-text search across note titles and bodies, with recent searches and highlighted matches.
-10. **Backup notes**
+10. **Search notes** — full-text search across note titles and bodies, with recent searches and highlighted matches.
+11. **Backup notes**
     - **Export** — manual backup to a single file (JSON or Markdown bundle) you can save or share.
     - **Automated backup** — scheduled local backups on device and optional cloud backup (e.g. Google Drive or user-chosen storage), with restore from a previous backup. Speech stays on-device; only note text is backed up.
 
 ## Platform
 
-11. Wear OS quick-capture companion (local-only).
-12. Home-screen widget for one-tap dictation into a new note.
+12. Wear OS quick-capture companion (local-only).
+13. Home-screen widget for one-tap dictation into a new note.
 
 ## Pro & distribution
 
-13. Family sharing / license restore improvements via Play.
-14. Open-source release of app code (when ready).
+14. Family sharing / license restore improvements via Play.
+15. Open-source release of app code (when ready).
 
 ---
 
