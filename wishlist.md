@@ -33,9 +33,10 @@ Ideas under consideration for MyVoiceBook. Numbers are for reference only—not 
    - Quick actions (rename, duplicate, move to archive)
    - Tablet and foldable layouts with a list + editor side-by-side
 10. **Search notes** — full-text search across note titles and bodies, with recent searches and highlighted matches.
-11. **Backup notes**
-    - **Export** — manual backup to a single file (JSON or Markdown bundle) you can save or share.
-    - **Automated backup** — scheduled local backups on device and optional cloud backup (e.g. Google Drive or user-chosen storage), with restore from a previous backup. Speech stays on-device; only note text is backed up.
+11. **Backup notes** (in progress / shipping)
+    - **Export / import** — manual SQLite database backup and restore.
+    - **Automated local backup** — scheduled copies into a user-chosen folder (via the system file picker; includes Drive and other providers). Optional dedicated cloud sync remains future work.
+12. **Cross-platform desktop app with notes sync** — a desktop client (Linux / macOS / Windows) so notes stay available beside the phone, with sync between Android and desktop. Speech recognition stays on-device; only note text syncs.
 
 ---
 
