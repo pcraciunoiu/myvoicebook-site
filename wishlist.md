@@ -10,6 +10,7 @@ Ideas under consideration for MyVoiceBook. Numbers are for reference only—not 
    - **Whisper medium** and English-only Whisper variants
    - More **streaming Zipformer** languages (Chinese, Korean, Vietnamese, Bengali, …)
    - Offline Zipformer CTC variants
+   - **Parakeet 110M English** — evaluate as a lighter English option alongside the current Parakeet TDT models
 2. **Import custom model packs** — add arbitrary sherpa-onnx bundles by URL with SHA-256 verification, beyond the built-in registry.
 
 ## Dictation
@@ -23,20 +24,24 @@ Ideas under consideration for MyVoiceBook. Numbers are for reference only—not 
    - Spoken numbers beyond English (locale-aware word → digit)
    - Email / URL / password-aware modes (constrain characters, avoid mid-sentence casing and paragraph rules)
    - Richer phone formatting when the host field is `TYPE_CLASS_PHONE`
+9. **Post-dictation correction chips + custom vocabulary** — after a committed segment, offer “did you mean?” suggestions backed by a user vocabulary / common corrections list.
 
 ## Notes
 
-9. **Improved notes UI**, including:
-   - Sort notes by date updated, date created, or title
-   - Pinned / favorite notes at the top of the list
-   - Clearer note previews and timestamps in the list
-   - Quick actions (rename, duplicate, move to archive)
-   - Tablet and foldable layouts with a list + editor side-by-side
-10. **Search notes** — full-text search across note titles and bodies, with recent searches and highlighted matches.
-11. **Backup notes** (in progress / shipping)
+10. **Improved notes UI**, including:
+    - Sort notes by date updated, date created, or title
+    - Pinned / favorite notes at the top of the list
+    - Quick actions (rename, duplicate, move to archive)
+    - Tablet and foldable layouts with a list + editor side-by-side
+    - ~~Clearer note previews and timestamps in the list~~ *(timestamps shipped on Android and desktop)*
+11. **Search notes** — full-text search across note titles and bodies, with recent searches and highlighted matches.
+12. **Backup notes**
     - **Export / import** — manual SQLite database backup and restore.
-    - **Automated local backup** — scheduled copies into a user-chosen folder (via the system file picker; includes Drive and other providers). Optional dedicated cloud sync remains future work.
-12. **Cross-platform desktop app with notes sync** — a desktop client (Linux / macOS / Windows) so notes stay available beside the phone, with sync between Android and desktop. Speech recognition stays on-device; only note text syncs.
+    - **Automated local backup** — scheduled copies into a user-chosen folder (via the system file picker; includes Drive and other providers).
+13. **Desktop app + notes sync** — Linux desktop client with local-folder and Google Drive sync is shipping; speech recognition stays on-device, only note text syncs.
+    - **Windows + macOS:** ship unsigned builds first (on macOS, Gatekeeper shows a warning; the app is still installable via right-click → Open).
+    - **Wishlist later:** signed + notarized macOS DMG (Apple Developer Program).
+14. **Hardened multi-device sync** — seamless recovery when phone and desktop edit at the same time, and safer first join when one side already has notes.
 
 ---
 
